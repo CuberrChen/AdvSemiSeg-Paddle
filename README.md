@@ -33,7 +33,7 @@ train_advSemiSeg_voc_res101.log为非可视化的训练日志。
 
 **在AiStudio中一键可运行**
 
-项目“advSeg”共享链接(有效期三天)：https://aistudio.baidu.com/studio/project/partial/verify/2884884/83721622a7224a6e9a1e3e0aa933488c
+项目“advSeg”共享链接：https://aistudio.baidu.com/aistudio/projectdetail/2884884?contributionType=1&shared=1
 
 预训练模型和可视化日志的网盘链接：链接: https://pan.baidu.com/s/1zPllmHyIgZzvQfTKLZYtdQ 提取码: pgqv 复制这段内容后打开百度网盘手机App，操作更方便
 
