@@ -1,0 +1,45 @@
+2021-11-30 11:59:49 [INFO]	Use CPU
+2021-11-30 11:59:49 [INFO]	Use MKLDNN
+[37m---    Fused 0 subgraphs into layer_norm op.[0m
+[37m---    fused 0 pairs of fc gru patterns[0m
+[37m---    fused 0 scale with matmul[0m
+[37m---    Fused 0 ReshapeTransposeMatmulMkldnn patterns[0m
+[37m---    Fused 0 ReshapeTransposeMatmulMkldnn patterns with transpose's xshape[0m
+[37m---    Fused 0 ReshapeTransposeMatmulMkldnn patterns with reshape's xshape[0m
+[37m---    Fused 0 ReshapeTransposeMatmulMkldnn patterns with reshape's xshape with transpose's xshape[0m
+[37m---    Fused 0 MatmulTransposeReshape patterns[0m
+[37m---    fused 0 batch norm with relu activation[0m
+2021-11-30 12:00:20 [INFO]	Finish
+/home/aistudio/.data/webide/pip/lib/python3.7/site-packages/auto_log/env.py:53: DeprecationWarning: distro.linux_distribution() is deprecated. It should only be used as a compatibility shim with Python's platform.linux_distribution(). Please use distro.id(), distro.version() and distro.name() instead.
+  plat = distro.linux_distribution()[0]
+/home/aistudio/.data/webide/pip/lib/python3.7/site-packages/auto_log/env.py:54: DeprecationWarning: distro.linux_distribution() is deprecated. It should only be used as a compatibility shim with Python's platform.linux_distribution(). Please use distro.id(), distro.version() and distro.name() instead.
+  ver = distro.linux_distribution()[1]
+2021-11-30 12:00:21 [INFO]	
+
+2021-11-30 12:00:21 [INFO]	---------------------- Env info ----------------------
+2021-11-30 12:00:21 [INFO]	 OS_version: Ubuntu 16.04
+2021-11-30 12:00:21 [INFO]	 CUDA_version: 10.1.243
+2021-11-30 12:00:21 [INFO]	 CUDNN_version: 7.3.1
+2021-11-30 12:00:21 [INFO]	 drivier_version: 450.51.06
+2021-11-30 12:00:21 [INFO]	---------------------- Paddle info ----------------------
+2021-11-30 12:00:21 [INFO]	 paddle_version: 2.2.0
+2021-11-30 12:00:21 [INFO]	 paddle_commit: ab2004bba69302553dd2abdcd79ddf9c10b6efd8
+2021-11-30 12:00:21 [INFO]	 log_api_version: 1.0
+2021-11-30 12:00:21 [INFO]	----------------------- Conf info -----------------------
+2021-11-30 12:00:21 [INFO]	 runtime_device: cpu
+2021-11-30 12:00:21 [INFO]	 ir_optim: True
+2021-11-30 12:00:21 [INFO]	 enable_memory_optim: True
+2021-11-30 12:00:21 [INFO]	 enable_tensorrt: False
+2021-11-30 12:00:21 [INFO]	 enable_mkldnn: True
+2021-11-30 12:00:21 [INFO]	 cpu_math_library_num_threads: 6
+2021-11-30 12:00:21 [INFO]	----------------------- Model info ----------------------
+2021-11-30 12:00:21 [INFO]	 model_name: 
+2021-11-30 12:00:21 [INFO]	 precision: fp16
+2021-11-30 12:00:21 [INFO]	----------------------- Data info -----------------------
+2021-11-30 12:00:21 [INFO]	 batch_size: 1
+2021-11-30 12:00:21 [INFO]	 input_shape: dynamic
+2021-11-30 12:00:21 [INFO]	 data_num: 50
+2021-11-30 12:00:21 [INFO]	----------------------- Perf info -----------------------
+2021-11-30 12:00:21 [INFO]	 cpu_rss(MB): 709.1758, gpu_rss(MB): 2.0, gpu_util: 0.0%
+2021-11-30 12:00:21 [INFO]	 total time spent(s): 25.5005
+2021-11-30 12:00:21 [INFO]	 preprocess_time(ms): 105.3235, inference_time(ms): 398.4336, postprocess_time(ms): 6.2525

@@ -1,0 +1,59 @@
+batch_size: 10
+iters: 20000
+
+model:
+  type: DeepLabV2
+  backbone:
+    type: ResNet101_vd
+    output_stride: 8
+    multi_grid: [1, 2, 4]
+    pretrained: https://bj.bcebos.com/paddleseg/dygraph/resnet101_vd_ssld.tar.gz
+  num_classes: 21
+  backbone_indices: [3]
+  aspp_ratios: [6, 12, 18, 24]
+  align_corners: False
+  pretrained: null
+
+train_dataset:
+  type: PascalVOC
+  dataset_root: /home/aistudio/data/data4379/pascalvoc/VOCdevkit/
+  transforms:
+    - type: ResizeStepScaling
+      min_scale_factor: 0.5
+      max_scale_factor: 2.0
+      scale_step_size: 0.25
+    - type: RandomPaddingCrop
+      crop_size: [321, 321]
+    - type: RandomHorizontalFlip
+    - type: RandomDistort
+      brightness_range: 0.4
+      contrast_range: 0.4
+      saturation_range: 0.4
+    - type: Normalize
+  mode: trainaug
+
+val_dataset:
+  type: PascalVOC
+  dataset_root: /home/aistudio/data/data4379/pascalvoc/VOCdevkit/
+  transforms:
+    - type: Padding
+      target_size: [512, 512]
+    - type: Normalize
+  mode: val
+
+
+optimizer:
+  type: sgd
+  momentum: 0.9
+  weight_decay: 4.0e-5
+
+lr_scheduler:
+  type: PolynomialDecay
+  learning_rate: 0.00025
+  end_lr: 0
+  power: 0.9
+
+loss:
+  types:
+    - type: CrossEntropyLoss
+  coef: [1]

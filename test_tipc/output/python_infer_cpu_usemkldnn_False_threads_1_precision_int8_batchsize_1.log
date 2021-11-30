@@ -1,0 +1,37 @@
+2021-11-30 12:01:20 [INFO]	Use CPU
+[37m---    Fused 0 subgraphs into layer_norm op.[0m
+[37m---    fused 0 pairs of fc gru patterns[0m
+2021-11-30 12:02:15 [INFO]	Finish
+/home/aistudio/.data/webide/pip/lib/python3.7/site-packages/auto_log/env.py:53: DeprecationWarning: distro.linux_distribution() is deprecated. It should only be used as a compatibility shim with Python's platform.linux_distribution(). Please use distro.id(), distro.version() and distro.name() instead.
+  plat = distro.linux_distribution()[0]
+/home/aistudio/.data/webide/pip/lib/python3.7/site-packages/auto_log/env.py:54: DeprecationWarning: distro.linux_distribution() is deprecated. It should only be used as a compatibility shim with Python's platform.linux_distribution(). Please use distro.id(), distro.version() and distro.name() instead.
+  ver = distro.linux_distribution()[1]
+2021-11-30 12:02:16 [INFO]	
+
+2021-11-30 12:02:16 [INFO]	---------------------- Env info ----------------------
+2021-11-30 12:02:16 [INFO]	 OS_version: Ubuntu 16.04
+2021-11-30 12:02:16 [INFO]	 CUDA_version: 10.1.243
+2021-11-30 12:02:16 [INFO]	 CUDNN_version: 7.3.1
+2021-11-30 12:02:16 [INFO]	 drivier_version: 450.51.06
+2021-11-30 12:02:16 [INFO]	---------------------- Paddle info ----------------------
+2021-11-30 12:02:16 [INFO]	 paddle_version: 2.2.0
+2021-11-30 12:02:16 [INFO]	 paddle_commit: ab2004bba69302553dd2abdcd79ddf9c10b6efd8
+2021-11-30 12:02:16 [INFO]	 log_api_version: 1.0
+2021-11-30 12:02:16 [INFO]	----------------------- Conf info -----------------------
+2021-11-30 12:02:16 [INFO]	 runtime_device: cpu
+2021-11-30 12:02:16 [INFO]	 ir_optim: True
+2021-11-30 12:02:16 [INFO]	 enable_memory_optim: True
+2021-11-30 12:02:16 [INFO]	 enable_tensorrt: False
+2021-11-30 12:02:16 [INFO]	 enable_mkldnn: False
+2021-11-30 12:02:16 [INFO]	 cpu_math_library_num_threads: 1
+2021-11-30 12:02:16 [INFO]	----------------------- Model info ----------------------
+2021-11-30 12:02:16 [INFO]	 model_name: 
+2021-11-30 12:02:16 [INFO]	 precision: int8
+2021-11-30 12:02:16 [INFO]	----------------------- Data info -----------------------
+2021-11-30 12:02:16 [INFO]	 batch_size: 1
+2021-11-30 12:02:16 [INFO]	 input_shape: dynamic
+2021-11-30 12:02:16 [INFO]	 data_num: 50
+2021-11-30 12:02:16 [INFO]	----------------------- Perf info -----------------------
+2021-11-30 12:02:16 [INFO]	 cpu_rss(MB): 580.8984, gpu_rss(MB): 2.0, gpu_util: 0.0%
+2021-11-30 12:02:16 [INFO]	 total time spent(s): 48.8936
+2021-11-30 12:02:16 [INFO]	 preprocess_time(ms): 33.8462, inference_time(ms): 942.074, postprocess_time(ms): 1.9525
