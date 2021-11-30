@@ -1,4 +1,4 @@
-# ENCNet_paddle
+# AdvSemiSeg
 
 
 ## 1 简介
