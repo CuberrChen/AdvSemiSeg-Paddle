@@ -391,10 +391,20 @@ def train_advSemiSeg(
         optimizer_D.step()
         lr = optimizer.get_lr()
         lr_D = optimizer_D.get_lr()
-        lr_sche = optimizer._learning_rate
-        lr_sche_D = optimizer_D._learning_rate
-        lr_sche.step()
-        lr_sche_D.step()
+        # update lr
+        if isinstance(optimizer, paddle.distributed.fleet.Fleet):
+            lr_sche = optimizer.user_defined_optimizer._learning_rate
+        else:
+            lr_sche = optimizer._learning_rate
+        if isinstance(lr_sche, paddle.optimizer.lr.LRScheduler):
+            lr_sche.step()
+        # lr_sche.step()
+        if isinstance(optimizer_D, paddle.distributed.fleet.Fleet):
+            lr_sche_D = optimizer_D.user_defined_optimizer._learning_rate
+        else:
+            lr_sche_D = optimizer_D._learning_rate
+        if isinstance(lr_sche_D, paddle.optimizer.lr.LRScheduler):
+            lr_sche_D.step()
 
         batch_cost_averager.record(
             time.time() - batch_start, num_samples=batch_size)
