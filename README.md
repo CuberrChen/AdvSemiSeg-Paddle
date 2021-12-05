@@ -24,7 +24,7 @@ Proceedings of the British Machine Vision Conference (BMVC), 2018. [Adversarial 
 [Pascal VOC 2012 + SBD dataset](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/index.html)
 
 - 数据集大小:
-    - 训练集: 8829
+    - 训练集: 10582
     - 验证集: 1449
 
 应有的数据集结构：
